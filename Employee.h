@@ -4,24 +4,26 @@
 
 #include <string>
 
-class Employee {
-// Attributes
+using namespace std;
+
+class Employee
+{
+    // Attributes
 protected:
-    std::string name;
+    string name;
     int id;
-    std::string type; // "Hourly" or "Salaried"
+    string type; // "Hourly" or "Salaried"
 
-// Methods
+    // Methods
 public:
-	// TODO: Constructor
+    Employee();
+    Employee(const string &name, int id, const string &type);
 
-    virtual ~Employee() {}
+    string getType() const;
 
-    // Virtual function to calculate payment
-    virtual double calculatePay() const = 0;
+    string getName() const;
 
-    // TODO: Getters
+    // virtual ~Employee();
 };
 
 #endif
-

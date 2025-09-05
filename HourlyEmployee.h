@@ -2,16 +2,22 @@
 #define HOURLYEMPLOYEE_H
 
 #include "Employee.h"
+#include <string>
 
-class HourlyEmployee : public Employee {
-public:
+using namespace std;
+
+class HourlyEmployee : public Employee
+{
+private:
     double payPerHour;
     double workedHours;
 
-    HourlyEmployee(const std::string& name, int id, double payPerHour, double workedHours);
-
-    double calculatePay() const override;
+public:
+    HourlyEmployee();
+    HourlyEmployee(const string &name, int id, double payPerHour, double workedHours);
+    double getPayPerHour() const;
+    double getWorkedHours() const;
+    double calculatePay() const;
 };
 
 #endif
-
