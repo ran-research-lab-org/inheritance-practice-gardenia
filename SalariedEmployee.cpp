@@ -1,9 +1,23 @@
 #include "SalariedEmployee.h"
+#include <string>
 
-SalariedEmployee::SalariedEmployee(const std::string& name, int id, double yearlyPayment)
-: {
-    // TODO: 
+using namespace std;
+
+SalariedEmployee::SalariedEmployee() {}
+
+SalariedEmployee::SalariedEmployee(const string &name, int id, double yearlyPayment)
+{
+    this->name = name;
+    this->id = id;
+    this->yearlyPayment = yearlyPayment;
 }
-/*TODO: calculate Payment */
 
-/* IMPLEMENT GETTERS*/
+double SalariedEmployee::calculatePay() const
+{
+    return;
+}
+
+double SalariedEmployee::getYearlyPayment() const
+{
+    return yearlyPayment;
+}
