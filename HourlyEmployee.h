@@ -8,12 +8,13 @@ using namespace std;
 
 class HourlyEmployee : public Employee
 {
-public:
+private:
     double payPerHour;
     double workedHours;
 
+public:
+    HourlyEmployee();
     HourlyEmployee(const string &name, int id, double payPerHour, double workedHours);
-
     double getPayPerHour() const;
     double getWorkedHours() const;
     double calculatePay() const;

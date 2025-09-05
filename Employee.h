@@ -19,9 +19,6 @@ public:
     Employee();
     Employee(const string &name, int id, const string &type);
 
-    // Virtual function to calculate payment
-    virtual double calculatePay() const;
-
     string getType() const;
 
     string getName() const;

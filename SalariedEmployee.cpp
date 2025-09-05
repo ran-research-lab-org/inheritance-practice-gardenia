@@ -14,7 +14,7 @@ SalariedEmployee::SalariedEmployee(const string &name, int id, double yearlyPaym
 
 double SalariedEmployee::calculatePay() const
 {
-    return;
+    return yearlyPayment / 26;
 }
 
 double SalariedEmployee::getYearlyPayment() const

@@ -3,6 +3,8 @@
 
 using namespace std;
 
+HourlyEmployee::HourlyEmployee() {}
+
 HourlyEmployee::HourlyEmployee(const string &name, int id, double payPerHour, double workedHours)
 {
     this->name = name;
